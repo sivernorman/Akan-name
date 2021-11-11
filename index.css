@@ -3,12 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* .img{
-    background-repeat:no-repeat ;
-    background-size: cover;
-    background: url(../Akan-name/images/mainimg.jpg);
-} */
-body{
+ body{
     padding-top: 10%;
     background-image: url(../images/kunal-shinde--f0YLss50Bs-unsplash\ \(copy\).jpg);
     background-size: cover;
