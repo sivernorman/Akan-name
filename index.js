@@ -172,4 +172,4 @@ function findName(){
   dayValue = calculateDayValue();
   getGender();
 } 
-// kjhjjkkkkkkk   
+// kjhjjkkk  
