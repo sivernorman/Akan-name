@@ -5,82 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.js">
+    
     <title>Akan-NAME</title>
 </head>
 <body>
+     
+     <form>
+ 
+  <!--Collect users data-->
+           <h1>Akan-Name</h1>
+        <p>Akan name come from a traditional naming systm for people from countries 
+            such as Togo,Ivory Coast and Ghana.These Akan name signify the day one is born
+            according to Akan tradition each child is born with a name associated to their soul.
+        </p> <br>
+        <p>Still curious! well in the input field below, type your date of birth and gender
+            to find out your Ghanian name. 
+        </p>
 
+      
+  <h1 style="text-align:center;">Type In Your Details Here!</h1>
+  <br>
+  <form name="myForm" onsubmit="validate();">
+      <p> Year of birth:</p>
+      <br>
+      <input id="year" value="" type="number" name="year" placeholder="Year"> <br>
+      <i>Year of Birth Eg: 1872 if year of birth is 1872</i>
+      <br>
+      <strong>Between 1900 to 2021</strong>
+      <br>
+      <br>
+      <input type="number" id="month" placeholder="Month of Birth" name="month">
+      <br>
+      <i>Month of Birth Eg: 3 if month of birth is March</i>
+      <br>
+      <strong>Not more than 12</strong>
+      <br>
+      <br>
+      <input type="number" id="date" placeholder="Date of Birth" name="date">
+      <br>
+      <i>Date of Birth Eg: 07 if you were born on the 7th day of the month</i>
+      <br>
+      <strong>Not more than 31</strong>
+      <br>
+      <br>
+      
+      <input type="radio" name="gender" id="male"> Male
+      <input type="radio" name="gender" id="female"> Female
+      
+      <br>
+      
+        <button type="submit" onclick="findName()">find Name</button>
+        <br>
+      
     
-        
-    
-    <form>
-            your age <br>
-            <input type="text" name="" placeholder="your age"> <br>
-            <i>for example:22</i>
-            <br><br>
-             your Date of birth <br>
-        <select name="month">
-            <option value="0">Month</option>
-            <option value="1">january</option>
-            <option value="2">february</option>           
-             <option value="3">march</option>
-             <option value="4">April</option>
-             <option value="5">May</option>
-             <option value="6">June</option>
-             <option value="7">July</option>
-             <option value="8">August</option>
-             <option value="9">September</option>
-             <option value="10">october</option>
-             <option value="11">November</option>
-             <option value="12">December</option>
-        </select>
-        <select name="day" >
-            <option value="day">Day</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-        </select><br><br>
-        <i>for example:1999 is 19</i><br>
-        <select name="centuary" >
-            <option value="centuary">centuary</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-
-        </select> <br><br>
-        <input type="submit" name="" value="submit"> 
-    
-</div>
-</body>
+  </form>
+<script src="index.js"></script>
+     
+ </body>
 </html>
