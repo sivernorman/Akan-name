@@ -2,18 +2,20 @@ var CC, YY, MM, DD, d, dayValue;
 var dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday" ];
 var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
 var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
-
+// year
 function validate() {
   var genders = document.getElementsByName("gender");
-  if( document.myForm.year.value == "" || document.myForm.year.value.length !=4 || document.myForm.year.value >2100 || document.myForm.year.value <=1900) {
+  if( document.myForm.year.value == "" || document.myForm.year.value.length !=4 || document.myForm.year.value >2800 || document.myForm.year.value <=1900) {
      alert( "Please provide a valid year of birth! eg 2019" );
       return false;
   }
+  // month
   else if( document.myForm.month.value == "" || isNaN( document.myForm.month.value ) ||
   document.myForm.month.value.length != 2 || document.myForm.month.value > 12  || document.myForm.month.value <= 0){
      alert( "Please provide your month of birth! between 1 and 12" );
       return false;
   }
+  // day
   else if( document.myForm.date.value == "" || isNaN( document.myForm.month.value ) ||
   document.myForm.month.value.length != 2|| document.myForm.date.value > 31 || document.myForm.date.value <= 0) {
      alert( "Please provide a valid date that you were born in!" );
@@ -74,7 +76,7 @@ function getGender(){
       else if(dayValue == -0){
         alert("You were born on "+dayNames[6] + " and Your akan name is " +maleNames[6]+"!");
       }
-    break;
+     break;
     case "female":
       if (dayValue == 1){
         alert("You were born on "+dayNames[0] + " and Your akan name is  " +femaleNames[0]+"!");
